@@ -9,7 +9,6 @@ export const Services = () => {
     { id: '05', title: 'Content Creation', description: 'Crafting engaging and relevant content, including blogs, videos, and graphics, to connect with your audience and enhance your brand story.' },
     { id: '06', title: 'Social Media Management', description: 'Managing your social media channels to build brand awareness, engage your audience, and grow your online presence.' }
 ]
-
   return (
     <section className='text-white py-20'>
         <div className="container mx-auto flex flex-col md:flex-row">
