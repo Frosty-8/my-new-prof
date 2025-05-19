@@ -43,14 +43,14 @@ export const Portfolio = () => {
       repeat: Infinity,
       repeatType: 'mirror'
     })
-  }, [])
+  }, [color])
   
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`
 
   return (
     <motion.section 
       style={{
-        backgroundImage: backgroundImage as any,
+        backgroundImage
       }}
       id='portfolio' 
       className='py-16 text-white'

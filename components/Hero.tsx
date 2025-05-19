@@ -18,7 +18,7 @@ export const Hero = () => {
             repeat:Infinity,
             repeatType:'mirror'
         })
-    },[])
+    },[color])
 
     const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0% , #000 50%, ${color})`
     const border = useMotionTemplate`1px solid ${color}`
@@ -27,7 +27,7 @@ export const Hero = () => {
   return (
     <motion.section
         style={{
-            backgroundImage: backgroundImage as any
+            backgroundImage
         }}
         className='relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 
         text-gray-200 lg:px-0 lg:py-0'>
@@ -79,8 +79,8 @@ export const Hero = () => {
 
                 <motion.button 
                     style={{
-                        border: border as any,
-                        boxShadow: boxShadow as any
+                        border,
+                        boxShadow
                     }}
                     whileHover={{
                         scale: 1.015

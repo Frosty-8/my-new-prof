@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from 'react'
-import { motion, useMotionValue, useMotionTemplate, animate } from 'framer-motion'
+import { motion, useMotionValue, animate } from 'framer-motion'
 
 const metrics = [
   {
@@ -35,9 +35,7 @@ export const KeyMetrics = () => {
       repeat: Infinity,
       repeatType: 'mirror'
     });
-  }, []);
-
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #1a1a1a 50%, ${color})`;
+  }, [color]);
 
   return (
     <section
