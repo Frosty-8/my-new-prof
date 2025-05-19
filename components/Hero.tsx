@@ -77,22 +77,24 @@ export const Hero = () => {
                     Fullstack Developer | Data Scientist 
                 </p> 
 
-                <motion.button 
-                    style={{
-                        border,
-                        boxShadow
-                    }}
-                    whileHover={{
-                        scale: 1.015
-                    }}
-                    whileTap={{
-                        scale:0.985
-                    }}
-                    className=" flex w-fit items-center gap-2 rounded-full px-4 py-2 "
-                >
-                    Download Resume
-                    <FiArrowRight /> 
-                </motion.button>
+                <a href="/resume-design.pdf" download>
+                    <motion.button 
+                        style={{
+                            border,
+                            boxShadow
+                        }}
+                        whileHover={{
+                            scale: 1.015
+                        }}
+                        whileTap={{
+                            scale: 0.985
+                        }}
+                        className="flex w-fit items-center gap-2 rounded-full px-4 py-2"
+                    >
+                        Download Resume
+                        <FiArrowRight /> 
+                    </motion.button>
+                </a>
             </div>
     </motion.section>
   )
