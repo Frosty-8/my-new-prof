@@ -33,7 +33,7 @@ export const Hero = () => {
         text-gray-200 lg:px-0 lg:py-0'>
 
             <div className="z-10 flex flex-col items-center">
-                <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
+                <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-3 text-sm">
                     Open to Work
                 </span>
                 <h1 className="text-white/40 text-6xl font-black">
