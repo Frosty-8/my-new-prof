@@ -77,7 +77,7 @@ export const Hero = () => {
                     Fullstack Developer | Data Scientist 
                 </p> 
 
-                <a href="/resume-design.pdf" download>
+                <a href="/Resume.pdf" download>
                     <motion.button 
                         style={{
                             border,
